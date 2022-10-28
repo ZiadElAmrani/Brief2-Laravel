@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Promotion_Controller;
+use App\Http\Controllers\students_Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,11 +16,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/promotions', [Promotion_Controller::class, 'index'])->name('index');
+Route::get('promotions', [Promotion_Controller::class, 'index'])->name('index');
 
-Route::get('/promotions/add', [Promotion_Controller::class, 'add_promotion'])->name('add-promotion');
+Route::get('promotions/add', [Promotion_Controller::class, 'add_promotion'])->name('add-promotion');
 
-Route::post('/promotions/add', [Promotion_Controller::class, 'insert_promotion'])->name('insert-promotion');
+Route::post('promotions/add', [Promotion_Controller::class, 'insert_promotion'])->name('insert-promotion');
 
 Route::get('promotion/{id}/edit', [Promotion_Controller::class, 'edit_promotion'])->name('edit-promotion');
 
@@ -30,3 +31,13 @@ Route::get('promotion/delete', [Promotion_Controller::class, 'delete_promotion']
 Route::get('search/{name}', [Promotion_Controller::class, 'search']);
 
 Route::get('search', [Promotion_Controller::class, 'search']);
+
+Route::get('studentadd/{id}', [students_Controller::class, 'form_student']);
+
+Route::post('studentstore', [students_Controller::class, 'studentstore']);
+
+Route::get('student/{id}/edit', [students_Controller::class, 'student_edit']);
+
+Route::post('student/{id}/update', [students_Controller::class, 'student_update']);
+
+Route::get('student/{id}/delete', [students_Controller::class, 'student_delete']);

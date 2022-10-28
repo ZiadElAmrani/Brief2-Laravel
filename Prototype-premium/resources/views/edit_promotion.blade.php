@@ -14,6 +14,8 @@
     <input type="text" value="{{$row->name}}" name="name">
     <button>Update</button>
 </form>
+<button><a href="{{url("Studentadd")}}/{{$row->id}}">add student</button>
+
 @endforeach
 </body>
 </html>
