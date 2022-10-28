@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="/app.css">
+    <link rel="icon" href="/icon.webp">
     <script src="https://kit.fontawesome.com/8b497b2419.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Promotions and students management</title>
 </head>
 <body>
     <div class="container text-center border border-2 rounded" style="height: 100%;">
@@ -29,7 +30,7 @@
                 </div>
                 <div class="col-8">
                     <div class="">
-                        <button class="btn btn-secondary btn-sm" id="add_promo">Ajouter Promotion</button>
+                        <button class="btn btn-secondary btn-sm" id="add_promo">Add Promotion</button>
                         Search : <input id="search" name="search" type="text" placeholder="Search..">
                     </div>
                     
@@ -51,7 +52,7 @@
                         </div>
                     </div>
                 </form>
-            
+
 
 
                 <div class="row" id="search_table">
